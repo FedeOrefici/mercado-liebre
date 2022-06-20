@@ -3,7 +3,7 @@ const app = express();
 
 //middleware
 app.use(express.static('public'));
-app.set('puerto', process.env.PORT || 3001);
+// app.set('puerto', process.env.PORT || 3001);
 
 //rutas
 app.get('/', (req,res)=>{
@@ -24,4 +24,6 @@ app.get('/register', (req,res)=>{
 
 // app.listen(app.get('puerto')), ()=> console.log(`'server working' ${app.get('puerto')}`);
 
-app.listen(3000, ()=> console.log('server working'));
+app.listen(process.env.PORT || 3000, function(){
+    console.log("servidor corriendo en el puerto 3000")
+});
