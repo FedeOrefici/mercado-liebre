@@ -24,6 +24,6 @@ app.get('/register', (req,res)=>{
 
 // app.listen(app.get('puerto')), ()=> console.log(`'server working' ${app.get('puerto')}`);
 
-app.listen(process.env.PORT || 3000, function(){
-    console.log("servidor corriendo en el puerto 3000")
-});
+// app.listen(process.env.PORT || 3000, function(){
+//     console.log("servidor corriendo en el puerto 3000")
+// });
